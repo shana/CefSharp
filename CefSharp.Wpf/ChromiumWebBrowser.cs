@@ -3,6 +3,7 @@
 // Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
 
 using CefSharp.Internals;
+using CefSharp.Wpf.Internals;
 using CefSharp.Wpf.Rendering;
 using Microsoft.Win32.SafeHandles;
 using System;
@@ -118,6 +119,7 @@ namespace CefSharp.Wpf
             Drop += OnDrop;
 
             IsVisibleChanged += OnIsVisibleChanged;
+			FocusHandler = new DefaultFocusHandler(this);
 
             ToolTip = toolTip = new ToolTip();
             toolTip.StaysOpen = true;

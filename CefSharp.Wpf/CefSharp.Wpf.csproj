@@ -91,6 +91,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefaultFocusHandler.cs" />
     <Compile Include="DelegateCommand.cs" />
     <Compile Include="DisposableEventWrapper.cs" />
     <Compile Include="Rendering\InteropBitmapInfo.cs" />
